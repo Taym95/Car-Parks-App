@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170429171131) do
+ActiveRecord::Schema.define(version: 20170429195715) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 20170429171131) do
     t.boolean  "has_camera"
     t.boolean  "has_watchman"
     t.integer  "zip_code"
-    t.integer  "district"
+    t.string   "district"
     t.integer  "price_month"
     t.string   "main_picture"
     t.float    "lat"
