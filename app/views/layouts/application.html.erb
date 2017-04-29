@@ -6,12 +6,14 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="http://maps.google.com/maps/api/js"></script>
   </head>
 
   <body>
     <div class="container">
       <ul class="nav nav-tabs">
         <li role="presentation" class="active"><a href="/parks">Home</a></li>
+        <li role="presentation" class="active"><a href="/map">Parks map</a></li>
       </ul>
 
       <%= yield %>

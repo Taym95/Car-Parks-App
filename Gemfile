@@ -23,6 +23,7 @@ gem 'coffee-rails', '~> 4.2'
 # gem 'gmaps4rails'
 gem 'gmaps4rails'
 
+
 # gem 'geokit'
 gem 'geokit'
 
