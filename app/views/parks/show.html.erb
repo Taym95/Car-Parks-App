@@ -1,0 +1,69 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @park.name %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @park.address %>
+</p>
+
+<p>
+  <strong>Slug:</strong>
+  <%= @park.slug %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @park.city %>
+</p>
+
+<p>
+  <strong>Available:</strong>
+  <%= @park.available %>
+</p>
+
+<p>
+  <strong>Has camera:</strong>
+  <%= @park.has_camera %>
+</p>
+
+<p>
+  <strong>Has watchman:</strong>
+  <%= @park.has_watchman %>
+</p>
+
+<p>
+  <strong>Zip code:</strong>
+  <%= @park.zip_code %>
+</p>
+
+<p>
+  <strong>District:</strong>
+  <%= @park.district %>
+</p>
+
+<p>
+  <strong>Price month:</strong>
+  <%= @park.price_month %>
+</p>
+
+<p>
+  <strong>Main picture:</strong>
+  <%= @park.main_picture %>
+</p>
+
+<p>
+  <strong>Lat:</strong>
+  <%= @park.lat %>
+</p>
+
+<p>
+  <strong>Lng:</strong>
+  <%= @park.lng %>
+</p>
+
+<%= link_to 'Edit', edit_park_path(@park) %> |
+<%= link_to 'Back', parks_path %>

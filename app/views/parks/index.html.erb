@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Parks</h1>
+<div class="table-responsive">
+  <table  class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Slug</th>
+        <th>City</th>
+        <th>Available</th>
+        <th>Has camera</th>
+        <th>Has watchman</th>
+        <th>Zip code</th>
+        <th>District</th>
+        <th>Price month</th>
+        <th>Url main picture</th>
+        <th>Lat</th>
+        <th>Lng</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @parks.each do |park| %>
+        <tr>
+          <td><%= park.name %></td>
+          <td><%= park.address %></td>
+          <td><%= park.slug %></td>
+          <td><%= park.city %></td>
+          <td><%= park.available %></td>
+          <td><%= park.has_camera %></td>
+          <td><%= park.has_watchman %></td>
+          <td><%= park.zip_code %></td>
+          <td><%= park.district %></td>
+          <td><%= park.price_month %></td>
+          <td><%= park.main_picture %></td>
+          <td><%= park.lat %></td>
+          <td><%= park.lng %></td>
+          <td><%= link_to 'Show', park %></td>
+          <td><%= link_to 'Edit', edit_park_path(park) %></td>
+          <td><%= link_to 'Destroy', park, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+<br>
+
+<%= link_to 'New Park', new_park_path %>

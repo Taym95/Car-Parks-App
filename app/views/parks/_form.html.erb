@@ -1,0 +1,81 @@
+<%= form_for(park) do |f|  %>
+  <% if park.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(park.errors.count, "error") %> prohibited this park from being saved:</h2>
+
+      <ul>
+      <% park.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= f.label :name %>
+    <%= f.text_field :name, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :address %>
+    <%= f.text_field :address, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :slug %>
+    <%= f.text_field :slug, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :city %>
+    <%= f.text_field :city, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :available %>
+    <%= f.check_box :available %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :has_camera %>
+    <%= f.check_box :has_camera %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :has_watchman %>
+    <%= f.check_box :has_watchman%>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :zip_code %>
+    <%= f.number_field :zip_code, class: "form-control" %>
+  </div>
+
+  <div cclass="form-group">
+    <%= f.label :district %>
+    <%= f.number_field :district, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :price_month %>
+    <%= f.number_field :price_month, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :url_main_picture %>
+    <%= f.text_field :main_picture, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+      <%= f.label :latitude %>
+      <%= f.text_field :lat, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+      <%= f.label :longitude %>
+      <%= f.text_field :lng, class: "form-control" %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

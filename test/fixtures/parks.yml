@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  address: MyString
+  slug: MyString
+  city: MyString
+  available: false
+  has_camera: false
+  has_watchman: false
+  zip_code: 1
+  district: 1
+  price_month: 1
+  main_picture: MyString
+  lat: 1.5
+  lng: 1.5
+
+two:
+  name: MyString
+  address: MyString
+  slug: MyString
+  city: MyString
+  available: false
+  has_camera: false
+  has_watchman: false
+  zip_code: 1
+  district: 1
+  price_month: 1
+  main_picture: MyString
+  lat: 1.5
+  lng: 1.5
